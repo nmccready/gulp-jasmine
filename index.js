@@ -4,16 +4,11 @@ var gutil = require('gulp-util');
 var through = require('through2');
 var requireLike = require('require-like');
 var jasmineRequire = requireLike(require.resolve('./'), true);
-var _ = require('underscore');
 
 module.exports = function (options) {
 	options = options || {};
 
 	var jasmineBootStrap = jasmineRequire('./jasmine-npm-bootstrap')(false);
-	// gutil.log("JASMINEBOOTSTRAP: " + jasmineBootStrap);
-	// _.keys(jasmineBootStrap).forEach(function(k){
-	// 	gutil.log("key: " + k + " value: " + jasmineBootStrap[k] );
-	// });
 	var color = process.argv.indexOf('--no-color') === -1;
 	var reporter = options.reporter;
 
