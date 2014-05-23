@@ -16,8 +16,8 @@ exports = module.exports = JasmineNpmBootstrap;
 function JasmineNpmBootstrap(doBootWConfig) {
   //fake browser window & document
 
-  var document = jsdom("<html><head></head><body>hello world</body></html>");
-  var window = document.parentWindow;
+  var GLOBAL.document = jsdom("<html><head></head><body>hello world</body></html>");
+  var GLOBAL.window = document.parentWindow;
 
   if(doBootWConfig === undefined){//default to true
     doBootWConfig = true;
