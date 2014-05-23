@@ -38,9 +38,7 @@
     "require-like": "^0.1.2",
     "through2": "~0.4.0",
     "jasmine-core": "https://github.com/pivotal/jasmine/archive/jasmine-node2.tar.gz",
+    "jasmine": "https://github.com/pivotal/jasmine-npm/archive/master.tar.gz",
     "commander": "~2.1.0"
-  },
-  "devDependencies": {
-    "jasmine": "https://github.com/pivotal/jasmine-npm/archive/master.tar.gz"
   }
 }
