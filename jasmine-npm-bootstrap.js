@@ -8,11 +8,17 @@ var fs = require('fs'),
 
 var Command = require('./node_modules/jasmine/lib/command');
 var command = new Command(path.resolve(), process.argv);
+var jsdom = require("jsdom").jsdom;
 
 exports = module.exports = JasmineNpmBootstrap;
 
 //modified jasmine-npm runner
 function JasmineNpmBootstrap(doBootWConfig) {
+  //fake browser window & document
+
+  var document = jsdom("<html><head></head><body>hello world</body></html>");
+  var window = document.parentWindow;
+
   if(doBootWConfig === undefined){//default to true
     doBootWConfig = true;
   }

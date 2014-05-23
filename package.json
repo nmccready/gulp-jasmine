@@ -40,5 +40,8 @@
     "jasmine-core": "https://github.com/pivotal/jasmine/archive/jasmine-node2.tar.gz",
     "jasmine": "https://github.com/pivotal/jasmine-npm/archive/master.tar.gz",
     "commander": "~2.1.0"
+  },
+  "devDependencies": {
+    "jsdom": "^0.10.5"
   }
 }
