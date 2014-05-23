@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "jasmine"
   },
   "files": [
     "index.js"
@@ -39,6 +39,6 @@
     "through2": "~0.4.0"
   },
   "devDependencies": {
-    "mocha": "*"
+    "jasmine": "https://github.com/pivotal/jasmine-npm/archive/master.tar.gz"
   }
 }

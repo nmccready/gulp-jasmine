@@ -1,7 +1,7 @@
 'use strict';
 var assert = require('assert');
 var gutil = require('gulp-util');
-var jasmine = require('./index');
+var jasmine = require('../index');
 var through2 = require('through2');
 var out = process.stdout.write.bind(process.stdout);
 
